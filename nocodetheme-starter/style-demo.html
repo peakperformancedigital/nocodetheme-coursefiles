@@ -93,7 +93,8 @@
         </section>
         <hr style="margin-top: 2rem; margin-bottom: 2rem;">
         <section data-pg-name="Text Elements">
-            <h2>Text Markup</h2><span>This is a span.</span>
+            <h2>Text Markup</h2>
+            <span>This is a span.</span>
             <p>This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line. <kbd>This is a kbd tag.</kbd> And now we have a <mark>mark tag</mark>. Next up is a <sup>sup tag.</sup> for superscript and <sub>sub tag</sub> for subscript. Then we have <ins>inserted text</ins>, followed by <small>small text </small>. The next one will be <em>emphasis</em> which by default looks like italics. <a href="#">We should all be familiar with links by now.</a> The <strong>strong tag </strong>makes the text bold by default. To element mark up the title of a cited creative work.<cite>you can use the cite tag.</cite> Sometimes you want to show <del>deleted text</del> and this is one way to do it. The <dfn>definition element </dfn>indicates the term being defined within the context of a definition phrase or sentence.</p>
             <h3>Blockquote</h3>
             <blockquote>This is a blockquote, one or more lines of text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. </blockquote>
@@ -107,10 +108,10 @@ elit nisl posuere tortor, id suscipit diam dui sed nisi.
             Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. 
 Maecenas at hendrerit odio.</pre>
             <p>This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. </p>
-            <h3>Code</h3><code>This is code
+            <h3>Code</h3>
+            <code>This is code
                                     On another line
-                                    but it all strings together.&nbsp;</code>
-            <code>This is a second code element.</code>
+                                    but it all strings together.&nbsp;</code><code>This is a second code element.</code>
         </section>
         <hr style="margin-top: 2rem; margin-bottom: 2rem;">
         <section data-pg-name="Buttons">
@@ -121,15 +122,13 @@ Maecenas at hendrerit odio.</pre>
             <h3>Link Button Styling on Dark and Light</h3>
             <div style="background-color: black; padding: 1rem; color: white; border-width: 1px; border-style: solid;"> 
                 <div> 
-                    <p>This button use the .btn--base class to define the main button styles, then the .btn--light class to color it for dark backgrounds</p>
-                    <a class="btn--base btn--light">Learn More</a>
+                    <p>This button use the .btn--base class to define the main button styles, then the .btn--light class to color it for dark backgrounds</p><a class="btn--base btn--light">Learn More</a>
                     <p>The hover style from this button comes from the .btn--base:hover rule</p> 
                 </div>                 
             </div>             
             <div style="background-color: white; padding: 1rem; color: black; border-width: 1px; border-style: solid;"> 
                 <div> 
-                    <p>This button use the .btn--base class to define the main button styles, then the .btn--dark class to color it for dark backgrounds</p>
-                    <a class="btn--base btn--dark">Learn More</a>
+                    <p>This button use the .btn--base class to define the main button styles, then the .btn--dark class to color it for dark backgrounds</p><a class="btn--base btn--dark">Learn More</a>
                     <p>The hover style from this button comes from the .btn--dark:hover rule</p> 
                 </div>                 
             </div>             
@@ -186,13 +185,9 @@ Maecenas at hendrerit odio.</pre>
             <h3>Form</h3>
             <form action="/action_page.php" method="get"> 
                 <label for="fname">First name:</label>                 
-                <input type="text" id="fname" name="fname"/>
-                <br/>
-                <br/> 
+                <input type="text" id="fname" name="fname"/><br/><br/> 
                 <label for="lname">Last name:</label>                 
-                <input type="text" id="lname" name="lname"/>
-                <br/>
-                <br/> 
+                <input type="text" id="lname" name="lname"/><br/><br/> 
                 <input type="submit" value="Submit"/> 
             </form>
             <h3>Figure</h3>

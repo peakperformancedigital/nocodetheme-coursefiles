@@ -6,7 +6,6 @@
         <title>New page</title>
         <link href="css/theme.css" rel="stylesheet" type="text/css">
         <link href="css/style.css" rel="stylesheet">
-        <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
     </head>
     <body>
         <header class="site-header"><a class="screen-reader-text skip-link" href="#content">Skip to content</a>
@@ -23,7 +22,7 @@
                         </button>
                     </div>
                     <div class="header__main-menu">
-                        <nav>
+                        <nav aria-label="main-menu">
                             <ul class="main-menu__list">
                                 <li>
                                     <a href="">Item One</a>
@@ -40,32 +39,32 @@
         </header>
         <div>
             <div class="layout__constrained layout__x-padding main__innerwrapper">
-                <div class="layout-grid__header-content-sidebar">
-                    <main class="header-content-sidebar__header" id="content">
+                <div class="layout-grid__content-sidebar">
+                    <main class="content-sidebar__content" id="content">
                         <header>
                             <h1>Page Title</h1>
                         </header>
-                    </main>
-                    <section class="header-content-sidebar__content" role="region" aria-label="Articles">
-                        <div class="article-card__wrapper">
-                            <ul>
-                                <li>
-                                    <article class="article-card">
-                                        <div class="article-card__image-wrapper">
-                                            <img src="assets/images/700x500.png">
-                                            <img src="assets/images/700x500.png">
-                                        </div>
-                                        <div class="article-card__content-wrapper">
-                                            <a href="#"> <h2 class="break-hyphenate">Article Title</h2> </a>
-                                            <p>Article Excerpt</p>
-                                        </div>
-                                    </article>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="pagination"> 
+                        <section role="region" aria-label="Articles">
+                            <div class="article-card__wrapper">
+                                <ul>
+                                    <li>
+                                        <article class="article-card">
+                                            <div class="article-card__image-wrapper">
+                                                <img src="assets/images/700x500.png">
+                                                <img src="assets/images/700x500.png">
+                                            </div>
+                                            <div class="article-card__content-wrapper">
+                                                <a href="#"> <h2 class="break-hyphenate">Article Title</h2> </a>
+                                                <p>Article Excerpt</p>
+                                            </div>
+                                        </article>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pagination"> 
 </div>
-                    </section>
+                        </section>
+                    </main>
                     <aside class="header-content-sidebar__sidebar">
                         <div>
                             <span>Sidebar Template Part</span>
@@ -91,12 +90,11 @@
                     </div>
                 </div>
             </div>
-            <button id="topBtn" title="Go to top"> 
+            <button id="topBtn" title="Go to top" data-pg-ia-hide> 
                 <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16"> 
                     <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/> 
                 </svg>                 
             </button>             
         </footer>
-        <script src="pgia/lib/pgia.js"></script>
     </body>
 </html>

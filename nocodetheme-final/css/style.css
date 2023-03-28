@@ -632,10 +632,6 @@ button:focus:not(:focus-visible) {
     grid-area: header;
 }
 
-.header-content-sidebar__content {
-    grid-area: content;
-}
-
 .header-content-sidebar__sidebar {
     grid-area: sidebar;
 }
@@ -995,18 +991,3 @@ header h1 {
 ------------------------------------------------------------ */
 /* * 9999 Here be Dragons
 ------------------------------------------------------------ */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
