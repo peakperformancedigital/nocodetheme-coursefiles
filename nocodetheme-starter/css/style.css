@@ -191,9 +191,9 @@ p {
 /* * 1.5 Globals
 ------------------------------------------------------------ */
 html {
-    font-size: 100%;
+    /*font-size: 100%;
+    scroll-padding-top: 10rem;*/
     scroll-behavior: smooth;
-    scroll-padding-top: 10rem;
 }
 
 [id] {

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>New page</title>
         <link href="css/theme.css" rel="stylesheet" type="text/css">
+        <link href="css/theme.css" rel="stylesheet" type="text/css">
         <link href="css/style.css" rel="stylesheet">
         <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
     </head>
@@ -42,8 +43,11 @@
             <div class="layout__constrained layout__x-padding main__innerwrapper" cms-post="loop" cms-post-repeat=".article-card__wrapper > ul > li">
                 <div class="layout-grid__content-sidebar">
                     <main class="content-sidebar__content" id="content">
-                        <header>
-                            <h1 cms-function="code" cms-function-type="content" cms-function-code="the_archive_title()">Page Title</h1>
+                        <header wp-if-is-search="!">
+                            <h1 cms-function="code" cms-function-code="the_archive_title()" cms-function-type="content">Page Title</h1>
+                        </header>
+                        <header wp-if-is-search>
+                            <h1><span>Search Results For:&nbsp;</span><span wp-the-search-query wp-the-search-query-set="content">Search Terms</span></h1>
                         </header>
                         <section role="region" aria-label="Articles">
                             <div class="article-card__wrapper">
